@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500|Roboto:400,400i,500&display=swap&subset=cyrillic');
+
+body {
+	margin: 0;
+	background-color: #ede9e0;
+	font-size: 16px;
+	line-height: 1.875;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+}
+
+
+/* -----------------------НАВИГАЦИЯ----------------------------- */
+
+
+.page-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo, .main-nav, .page-header__tel {
+  display: inline-block;
+  padding: 0;
+}
+
+.logo {
+
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin-left: 220px;
+  
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 28px;
+}
+
+.main-nav__item a {
+  display: block;
+  text-align: left;
+  color: #202020;
+  text-decoration: none;
+}
+
+.page-header__tel {
+  text-align: left;
+  color: #510fad;
+  text-decoration: none;
+   margin-left: 28px;
+}
+
+
+/* --------------------------ПРОМО БЛОК---------------------------- */
+
+
+
+.hero{
+	font-size: 0;
+	width: 1024px;
+	margin: auto;
+	margin-bottom: 88px;
+}
+.hero__img-wrap{
+	display: inline-block;
+	width: 50%;
+}
+.hero__img {}
+
+.hero__text {
+	display: inline-block;
+	width: 50%;
+	padding-top: 137px;
+	vertical-align: top;
+}
+
+.hero__text p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #727173;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  font-size: 3rem;
+  line-height: 1.25;
+  text-align: left;
+  color: #202020;
+}
+
+/* --------------------------------БЛОК О ПИТОМНИКЕ ------------------------------------------ */
+.about {
+	width: 1024px;
+	margin: auto;
+	padding: 194px 132px 195px 41px;
+	background-color: #510fad;
+	margin-bottom: 147px;
+}
+
+.about:before {}
+.about:after {}
+
+.about__header {
+	display: block;
+	margin: auto;
+}
+
+.about__title {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+}
+
+.about__header p {
+  width: 355px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.88;
+  text-align: left;
+  color: #b8adc8;
+}
+
+.about__content {
+	display: block;
+}
+
+.about__img-wrap {
+	display: inline-block;
+}
+
+.about__img {
+	border-radius: 9px;
+  box-shadow: -20px 0px 45px 5px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.about__text-wrap {
+	display: inline-block;
+}
+
+.about__features-list {}
+
+.about__feature {
+	font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+.about__link-video {
+font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #ffec00;
+  text-decoration: none;
+}
+    
+ .about__link-video:after {}
+
+    /* --------------------------------БЛОК ПОРОДЫ ------------------------------------------ */
+
+.pets {
+	margin: auto;
+	width: 1024px;
+	margin-bottom: 144px;
+}
+
+.pets__title {
+	font-family: 'Fira Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #202020;
+}
+}
+
+.pets__list {
+	font-size: 0;
+}
+
+.pets__item {
+	display: inline-block;
+}
+
+.pet-card {
+display: block;
+}
+
+.pet-card__title {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #202020;
+
+}
+
+.pet-card p {
+  width: 291px;
+  height: 105px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #737274;
+}
+
+.pet-card__img {
+border-radius: 70px;
+}
+
+.pet-card__link {
+	font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #510fad;
+  text-decoration: none;
+}
+
+.pet-card__link:after {}
+
+ /* --------------------------------БЛОК ОТЗЫВы ------------------------------------------ */
+
+.reviews {
+  width: 1024px;
+  margin: auto;
+  margin-bottom: 207px;
+}
+
+.reviews__title {
+	font-family: 'Fira Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #202020;
+}
+
+.reviews__comment {
+	font-size: 0;
+	display: block;
+}
+
+.comment {
+	font-size: 0;
+	display: block;	
+}
+
+.comment__text {
+	display: inline-block;
+	width: 50%;
+}
+
+.comment__author {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #202020;
+}
+.comment__date {
+	font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #737274;
+}
+
+.comment__text p {
+	width: 457px;
+	font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #202020;
+
+}
+
+.comment__img-wrap {
+	display: inline-block;
+	width: 50%;
+}
+.comment__img {
+	border-radius: 10px;
+  box-shadow: -6px 0px 40px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ede9e0;
+}
+.comment__img-caption {
+font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #737274;
+}
+
+.comment__link {
+	color: #5718af;
+	text-decoration: none;
+}
+
+/* --------------------------------БЛОК БЛОГ ------------------------------------------ */
+
+.blog {
+	width: 1024px;
+	margin: auto;
+	padding: 110px 41px 100px 45px;
+	background-color: #510fad;
+	font-size: 0;
+	margin-bottom: 145px;
+
+}
+
+.blog__header {
+	display: inline-block;
+	width: 50%;
+}
+.blog__title {text-align: left;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+  color: #ffffff;
+}
+
+.blog__header p {
+	font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #b8adc8;
+}
+}
+
+.social-links {
+	list-style: none;
+}
+.social-links__item {
+	display: inline-block;
+  margin-left: 9px;
+}
+.social-links__link {}
+.social-links__link-vk {}
+.social-links__link-fb {}
+.social-links__link-ig {}
+.social-links__name {color:#fff;}
+
+.blog__list {
+	display: inline-block;
+	width: 50%;
+}
+.blog__item {display: inline-block;}
+
+.article-card {
+	display: block;
+	width: 220px;
+  height: 290px;
+  border-radius: 10px;
+  box-shadow: -6px 0px 40px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+.article-card__img-link {}
+.article-card__img {}
+.article-card__text {}
+.article-card__title {
+	font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #202020;
+}
+.article-card__link {
+	font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #5c11c5;
+}
+
+ 
+/* --------------------------------БЛОК КОНТАКТЫ ------------------------------------------ */
+
+.contacts {
+	width: 1024px;
+	margin: auto;
+	padding: 0x 41px 0px 45px;
+	font-size: 0;
+	margin-bottom: 145px;
+}
+
+.contacts__title {
+	font-family: 'Fira Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #202020;
+}
+.contacts-list {
+	list-style: none;
+	display: inline-block;
+}
+.contacts-list__item {display: inline-block;
+width: 50%;}
+.contacts-list__title {
+	display: block;
+		font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #737274;
+}
+
+.contacts-list__desc, .contacts-list__link {
+	display: block;
+	font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #202020;
+  text-decoration: none;
+
+}
+

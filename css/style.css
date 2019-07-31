@@ -1,16 +1,70 @@
+/* -----------------------ПОДКЛЮЧЕНИЕ----------------------------- */
+
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:500|Roboto:400,400i,500&display=swap&subset=cyrillic');
+
+:root {
+  --black: #202020;
+  --white: #ffffff;
+  --gray: #737274;
+  --violet-gray: #b8adc8;
+  --violet: #510fad;
+  --yellow: #ffec00;
+  --beige: #ede9e0;;
+}
+
+/* -----------------------ОСНОВНОЕ----------------------------- */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
 
 body {
 	margin: 0;
-	background-color: #ede9e0;
+	background-color: var(--beige);
 	font-size: 16px;
-	line-height: 1.875;
+	line-height: 1.88;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
 	font-family: 'Roboto', sans-serif;
 }
+
+/* -----------------------ТЕКСТОВЫЕ СТИЛИ----------------------------- */
 
 h1, h2, h3 {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 0.83;
+  letter-spacing: 1.2px;
+}
+
+p {
+  margin: 0;
 }
 
 
@@ -18,44 +72,69 @@ h1, h2, h3 {
 
 
 .page-header {
+  width: 1024px;
   margin: 0 auto;
-  text-align: center;
 }
 
-.logo, .main-nav, .page-header__tel {
+.page-header__inner {
   display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+  padding: 10px 0 10px 41px;
+  margin: 0;
+}
+
+
+.logo {
+  display: inline-block;
+  margin: 0;
   padding: 0;
 }
 
-.logo {
 
+.main-nav {
+  display: inline-block;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-left: 200px;
 }
 
 .main-nav__list {
+  display: block;
   list-style: none;
   padding: 0;
-  margin-left: 220px;
-  
+  margin: 0;
 }
 
 .main-nav__item {
   display: inline-block;
-  margin-left: 28px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
 }
 
 .main-nav__item a {
   display: block;
+  padding: 14px;
+  font-size: 16px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
   text-decoration: none;
 }
 
+
 .page-header__tel {
+  display: inline-block;
+  margin: 0;
+  padding: 14px;
+  font-size: 16px;
   text-align: left;
-  color: #510fad;
+  color: var(--violet);
   text-decoration: none;
-   margin-left: 28px;
 }
+
 
 
 /* --------------------------ПРОМО БЛОК---------------------------- */
@@ -66,19 +145,32 @@ h1, h2, h3 {
 	font-size: 0;
 	width: 1024px;
 	margin: auto;
-	margin-bottom: 88px;
+	margin-bottom: 195px;
 }
+
 .hero__img-wrap{
-	display: inline-block;
-	width: 50%;
+	display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  padding-left: 17px;
 }
-.hero__img {}
+
+.hero__img {
+}
 
 .hero__text {
-	display: inline-block;
-	width: 50%;
-	padding-top: 137px;
-	vertical-align: top;
+	display: block;
+  width: 510px;
+  margin-left: 359px;
+  margin-top: 115px;
+	vertical-align: center;
+}
+
+.hero__title {
+  text-align: left;
+  color: var(--black);
+  margin-bottom: 40px;
 }
 
 .hero__text p {
@@ -87,23 +179,27 @@ h1, h2, h3 {
   line-height: 1.43;
   letter-spacing: 0.7px;
   text-align: left;
-  color: #727173;
+  color: var(--gray);
   text-transform: uppercase;
 }
 
-.hero__title {
-  font-size: 3rem;
-  line-height: 1.25;
-  text-align: left;
-  color: #202020;
+.hero__text p:before {
+      content: ""; 
+      background-color: var(--violet);
+      font-size: 14px;
+      line-height: 14px;
+      padding: 1px;
+      margin-right: 8px;
 }
+
+
 
 /* --------------------------------БЛОК О ПИТОМНИКЕ ------------------------------------------ */
 .about {
 	width: 1024px;
 	margin: auto;
 	padding: 194px 132px 195px 41px;
-	background-color: #510fad;
+	background-color: var(--violet);
 	margin-bottom: 147px;
 }
 
@@ -117,21 +213,14 @@ h1, h2, h3 {
 
 .about__title {
   text-align: left;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 0.56;
-  letter-spacing: 1.8px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .about__header p {
   width: 355px;
   height: 44px;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.88;
   text-align: left;
-  color: #b8adc8;
+  color: var(--violet-gray);
 }
 
 .about__content {
@@ -145,7 +234,7 @@ h1, h2, h3 {
 .about__img {
 	border-radius: 9px;
   box-shadow: -20px 0px 45px 5px rgba(0, 0, 0, 0.5);
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .about__text-wrap {
@@ -155,19 +244,13 @@ h1, h2, h3 {
 .about__features-list {}
 
 .about__feature {
-	font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
   text-align: left;
-  color: #ffffff;
+  color: var(--white);
 
 }
 
 .about__link-video {
-font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -175,7 +258,7 @@ font-family: 'Fira Sans', sans-serif;
   line-height: 1.88;
   letter-spacing: 0.8px;
   text-align: left;
-  color: #ffec00;
+  color: var(--yellow);
   text-decoration: none;
 }
     
@@ -190,15 +273,8 @@ font-family: 'Fira Sans', sans-serif;
 }
 
 .pets__title {
-	font-family: 'Fira Sans', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.56;
-  letter-spacing: 1.8px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 }
 }
 
@@ -215,29 +291,16 @@ display: block;
 }
 
 .pet-card__title {
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 24px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.83;
-  letter-spacing: 1.2px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 
 }
 
 .pet-card p {
   width: 291px;
   height: 105px;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
   text-align: left;
-  color: #737274;
+  color: var(--gray);
 }
 
 .pet-card__img {
@@ -253,7 +316,7 @@ border-radius: 70px;
   line-height: 2.14;
   letter-spacing: 0.7px;
   text-align: left;
-  color: #510fad;
+  color: var(--violet);
   text-decoration: none;
 }
 
@@ -268,15 +331,8 @@ border-radius: 70px;
 }
 
 .reviews__title {
-	font-family: 'Fira Sans', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.56;
-  letter-spacing: 1.8px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 }
 
 .reviews__comment {
@@ -303,29 +359,19 @@ border-radius: 70px;
   line-height: 0.83;
   letter-spacing: 1.2px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 }
 .comment__date {
-	font-size: 16px;
-  font-weight: normal;
   font-style: italic;
-  font-stretch: normal;
-  line-height: 1.88;
   letter-spacing: 0.8px;
   text-align: left;
-  color: #737274;
+  color: var(--gray);
 }
 
 .comment__text p {
 	width: 457px;
-	font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 
 }
 
@@ -336,21 +382,17 @@ border-radius: 70px;
 .comment__img {
 	border-radius: 10px;
   box-shadow: -6px 0px 40px 0 rgba(0, 0, 0, 0.4);
-  background-color: #ede9e0;
+  background-color: var(--beige);
 }
 .comment__img-caption {
-font-size: 16px;
-  font-weight: normal;
   font-style: italic;
-  font-stretch: normal;
-  line-height: 1.88;
   letter-spacing: 0.8px;
   text-align: left;
-  color: #737274;
+  color: var(--gray);
 }
 
 .comment__link {
-	color: #5718af;
+	color: var(--violet);
 	text-decoration: none;
 }
 
@@ -360,7 +402,7 @@ font-size: 16px;
 	width: 1024px;
 	margin: auto;
 	padding: 110px 41px 100px 45px;
-	background-color: #510fad;
+	background-color: var(--violet);
 	font-size: 0;
 	margin-bottom: 145px;
 
@@ -370,38 +412,61 @@ font-size: 16px;
 	display: inline-block;
 	width: 50%;
 }
-.blog__title {text-align: left;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 0.56;
-  letter-spacing: 1.8px;
-  color: #ffffff;
+.blog__title {
+  text-align: left;
+  color: var(--white);
 }
 
 .blog__header p {
-	font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
   text-align: left;
-  color: #b8adc8;
+  color: var(--violet-gray);
 }
 }
 
 .social-links {
 	list-style: none;
+	display: inline-block;
 }
 .social-links__item {
 	display: inline-block;
   margin-left: 9px;
 }
-.social-links__link {}
-.social-links__link-vk {}
-.social-links__link-fb {}
-.social-links__link-ig {}
-.social-links__name {color:#fff;}
+.social-links__link {
+	text-decoration: none;
+}
+.social-links__link--vk {
+	background-image: url('img/social-vk.svg');
+	background-size: 26px 26px;
+    background-color: #000;
+	width: 26px;
+	height: 26px;
+	display: block;
+    fill:#fff;
+}
+.social-links__link--fb {
+	background-image: url('img/social-facebook.svg');
+	background-size: 26px 26px;
+    background-color: #000;
+	width: 26px;
+	height: 26px;
+	display: block;
+    fill:#fff;
+}
+.social-links__link--ig {
+	background-image: url('img/social-instagram.svg');
+	background-size: 26px 26px;
+    background-color: #000;
+	width: 26px;
+	height: 26px;
+	display: block;
+    fill:#fff;
+}
+
+.social-links__name {
+	font-size: 0;
+	width: 0;
+	height: 0;
+}
 
 .blog__list {
 	display: inline-block;
@@ -421,15 +486,13 @@ font-size: 16px;
 .article-card__img {}
 .article-card__text {}
 .article-card__title {
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.88;
   letter-spacing: 0.8px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 }
 .article-card__link {
 	font-size: 14px;
@@ -439,7 +502,7 @@ font-size: 16px;
   line-height: 2.14;
   letter-spacing: 0.7px;
   text-align: left;
-  color: #5c11c5;
+  color: var(--violet);
 }
 
  
@@ -454,25 +517,20 @@ font-size: 16px;
 }
 
 .contacts__title {
-	font-family: 'Fira Sans', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.56;
-  letter-spacing: 1.8px;
   text-align: left;
-  color: #202020;
+  color: var(--black);
 }
 .contacts-list {
 	list-style: none;
 	display: inline-block;
 }
-.contacts-list__item {display: inline-block;
-width: 50%;}
+.contacts-list__item {
+  display: inline-block;
+  width: 50%;}
+
 .contacts-list__title {
 	display: block;
-		font-family: 'Fira Sans', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -480,20 +538,13 @@ width: 50%;}
   line-height: 2.14;
   letter-spacing: 0.7px;
   text-align: left;
-  color: #737274;
+  color: var(--gray);
 }
 
 .contacts-list__desc, .contacts-list__link {
 	display: block;
-	font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
   text-align: left;
-  color: #202020;
+  color: var(--black);
   text-decoration: none;
-
 }
 

@@ -137,7 +137,7 @@ p {
 
 
 
-/* --------------------------ПРОМО БЛОК---------------------------- */
+/* --------------------------ПРОМО---------------------------- */
 
 
 
@@ -194,7 +194,7 @@ p {
 
 
 
-/* --------------------------------БЛОК О ПИТОМНИКЕ ------------------------------------------ */
+/* --------------------------------О ПИТОМНИКЕ ------------------------------------------ */
 .about {
 	width: 1024px;
 	margin: auto;
@@ -288,47 +288,59 @@ p {
       margin-left: 16px;
  }
 
-    /* --------------------------------БЛОК ПОРОДЫ ------------------------------------------ */
+    /* --------------------------------ПОРОДЫ ------------------------------------------ */
 
 .pets {
 	margin: auto;
 	width: 1024px;
 	margin-bottom: 144px;
+  padding-right: 41px;
+  padding-left: 41px;
 }
 
 .pets__title {
-  text-align: left;
+  display: block;
+  margin: auto;
+  margin-left: 320px;
+  margin-bottom: 105px;
   color: var(--black);
-}
 }
 
 .pets__list {
 	font-size: 0;
+  display: block;
 }
 
 .pets__item {
 	display: inline-block;
+  width: 50%;
 }
 
 .pet-card {
 display: block;
+margin-bottom: 90px;
+
 }
 
 .pet-card__title {
   text-align: left;
   color: var(--black);
+  margin-bottom: 16px;
+}
+
+.pet-card__img {
+  position: absolute;
+  border-radius: 70px;
 
 }
 
 .pet-card p {
-  width: 291px;
-  height: 105px;
+  font-size: 16px;
   text-align: left;
   color: var(--gray);
-}
-
-.pet-card__img {
-border-radius: 70px;
+  margin-bottom: 20px;
+  margin-left: 160px;
+  margin-right: 20px;
 }
 
 .pet-card__link {
@@ -341,10 +353,20 @@ border-radius: 70px;
   letter-spacing: 0.7px;
   text-align: left;
   color: var(--violet);
+  margin-left: 160px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
-.pet-card__link:after {}
+.pet-card__link:after {
+  content: ""; 
+  background-image: url('img/arrow-next.svg');
+  background-color: #fff;
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 16px;
+}
 
  /* --------------------------------БЛОК ОТЗЫВы ------------------------------------------ */
 

@@ -1,0 +1,596 @@
+/* -----------------------ПОДКЛЮЧЕНИЕ----------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500|Roboto:400,400i,500&display=swap&subset=cyrillic');
+
+:root {
+  --black: #202020;
+  --white: #ffffff;
+  --gray: #737274;
+  --violet-gray: #b8adc8;
+  --violet: #510fad;
+  --yellow: #ffec00;
+  --beige: #ede9e0;;
+}
+
+/* -----------------------ОСНОВНОЕ----------------------------- */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	background-color: var(--beige);
+	font-size: 16px;
+	line-height: 1.88;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* -----------------------ТЕКСТОВЫЕ СТИЛИ----------------------------- */
+
+h1, h2, h3 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 0.56;
+  letter-spacing: 1.8px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 0.83;
+  letter-spacing: 1.2px;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* -----------------------НАВИГАЦИЯ----------------------------- */
+
+
+.page-header {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.page-header__inner {
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+  padding: 10px 0 10px 41px;
+  margin: 0;
+}
+
+
+.logo {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav {
+  display: inline-block;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  margin-left: 200px;
+}
+
+.main-nav__list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 14px;
+  font-size: 16px;
+  text-align: left;
+  color: var(--black);
+  text-decoration: none;
+}
+
+
+.page-header__tel {
+  display: inline-block;
+  margin: 0;
+  padding: 14px;
+  font-size: 16px;
+  text-align: left;
+  color: var(--violet);
+  text-decoration: none;
+}
+
+
+
+/* --------------------------ПРОМО---------------------------- */
+
+
+
+.hero{
+	font-size: 0;
+	width: 1024px;
+	margin: auto;
+	margin-bottom: 195px;
+}
+
+.hero__img-wrap{
+	display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  padding-left: 17px;
+}
+
+.hero__img {
+}
+
+.hero__text {
+	display: block;
+  width: 510px;
+  margin-left: 360px;
+  margin-top: 115px;
+	vertical-align: center;
+}
+
+.hero__title {
+  text-align: left;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.hero__text p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.hero__text p:before {
+      content: ""; 
+      background-color: var(--violet);
+      font-size: 14px;
+      line-height: 14px;
+      padding: 1px;
+      margin-right: 8px;
+}
+
+
+
+/* --------------------------------О ПИТОМНИКЕ ------------------------------------------ */
+.about {
+	width: 1024px;
+	margin: auto;
+	background-color: var(--violet);
+	margin-bottom: 147px;
+  padding: 194px 41px;
+}
+
+.about:before {}
+.about:after {}
+
+
+.about__header {
+	display: block;
+	margin: auto;
+  margin-left: 320px;
+  margin-bottom: 75px;
+}
+
+.about__title {
+  text-align: left;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.about__header p {
+  width: 360px;
+  text-align: left;
+  color: var(--violet-gray);
+}
+
+
+.about__content {
+	display: block;
+}
+
+.about__img-wrap {
+	display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.about__img {
+	border-radius: 9px;
+  box-shadow: -20px 0px 45px 5px rgba(0, 0, 0, 0.5);
+  background-color: var(--white);
+}
+
+.about__text-wrap {
+	display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 20px 16px;
+}
+
+.about__features-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  margin-bottom: 60px;
+}
+
+.about__feature {
+  text-align: left;
+  color: var(--white);
+  margin-bottom: 8px;
+
+}
+
+.about__link-video {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: var(--yellow);
+  text-decoration: none;
+}
+    
+ .about__link-video:after {
+      content: ""; 
+      background-image: url('img/arrow-next.svg');
+      background-color: #fff;
+      width: 20px;
+      height: 15px;
+      display: inline-block;
+      margin-left: 16px;
+ }
+
+    /* --------------------------------ПОРОДЫ ------------------------------------------ */
+
+.pets {
+	margin: auto;
+	width: 1024px;
+	margin-bottom: 144px;
+  padding-right: 41px;
+  padding-left: 41px;
+}
+
+.pets__title {
+  display: block;
+  margin: auto;
+  margin-left: 320px;
+  margin-bottom: 105px;
+  color: var(--black);
+}
+
+.pets__list {
+	font-size: 0;
+  display: block;
+}
+
+.pets__item {
+	display: inline-block;
+  width: 50%;
+}
+
+.pet-card {
+display: block;
+margin-bottom: 90px;
+
+}
+
+.pet-card__title {
+  text-align: left;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.pet-card__img {
+  position: absolute;
+  border-radius: 70px;
+
+}
+
+.pet-card p {
+  font-size: 16px;
+  text-align: left;
+  color: var(--gray);
+  margin-bottom: 20px;
+  margin-left: 160px;
+  margin-right: 20px;
+}
+
+.pet-card__link {
+	font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: var(--violet);
+  margin-left: 160px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pet-card__link:after {
+  content: ""; 
+  background-image: url('img/arrow-next.svg');
+  background-color: #fff;
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+ /* --------------------------------БЛОК ОТЗЫВы ------------------------------------------ */
+
+.reviews {
+  width: 1024px;
+  margin: auto;
+  margin-bottom: 207px;
+}
+
+.reviews__title {
+  text-align: left;
+  color: var(--black);
+}
+
+.reviews__comment {
+	font-size: 0;
+	display: block;
+}
+
+.comment {
+	font-size: 0;
+	display: block;	
+}
+
+.comment__text {
+	display: inline-block;
+	width: 50%;
+}
+
+.comment__author {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: var(--black);
+}
+.comment__date {
+  font-style: italic;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: var(--gray);
+}
+
+.comment__text p {
+	width: 457px;
+  text-align: left;
+  color: var(--black);
+
+}
+
+.comment__img-wrap {
+	display: inline-block;
+	width: 50%;
+}
+.comment__img {
+	border-radius: 10px;
+  box-shadow: -6px 0px 40px 0 rgba(0, 0, 0, 0.4);
+  background-color: var(--beige);
+}
+.comment__img-caption {
+  font-style: italic;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: var(--gray);
+}
+
+.comment__link {
+	color: var(--violet);
+	text-decoration: none;
+}
+
+/* --------------------------------БЛОК БЛОГ ------------------------------------------ */
+
+.blog {
+	width: 1024px;
+	margin: auto;
+	padding: 110px 41px 100px 45px;
+	background-color: var(--violet);
+	font-size: 0;
+	margin-bottom: 145px;
+
+}
+
+.blog__header {
+	display: inline-block;
+	width: 50%;
+}
+.blog__title {
+  text-align: left;
+  color: var(--white);
+}
+
+.blog__header p {
+  text-align: left;
+  color: var(--violet-gray);
+}
+}
+
+.social-links {
+	list-style: none;
+	display: inline-block;
+}
+.social-links__item {
+	display: inline-block;
+  margin-left: 9px;
+}
+.social-links__link {
+	text-decoration: none;
+}
+.social-links__link--vk {
+	background-image: url('img/social-vk.svg');
+	background-size: 26px 26px;
+    background-color: #000;
+	width: 26px;
+	height: 26px;
+	display: block;
+    fill:#fff;
+}
+.social-links__link--fb {
+	background-image: url('img/social-facebook.svg');
+	background-size: 26px 26px;
+    background-color: #000;
+	width: 26px;
+	height: 26px;
+	display: block;
+    fill:#fff;
+}
+.social-links__link--ig {
+	background-image: url('img/social-instagram.svg');
+	background-size: 26px 26px;
+    background-color: #000;
+	width: 26px;
+	height: 26px;
+	display: block;
+    fill:#fff;
+}
+
+.social-links__name {
+	font-size: 0;
+	width: 0;
+	height: 0;
+}
+
+.blog__list {
+	display: inline-block;
+	width: 50%;
+}
+.blog__item {display: inline-block;}
+
+.article-card {
+	display: block;
+	width: 220px;
+  height: 290px;
+  border-radius: 10px;
+  box-shadow: -6px 0px 40px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+}
+.article-card__img-link {}
+.article-card__img {}
+.article-card__text {}
+.article-card__title {
+	font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.88;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: var(--black);
+}
+.article-card__link {
+	font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: var(--violet);
+}
+
+ 
+/* --------------------------------БЛОК КОНТАКТЫ ------------------------------------------ */
+
+.contacts {
+	width: 1024px;
+	margin: auto;
+	padding: 0x 41px 0px 45px;
+	font-size: 0;
+	margin-bottom: 145px;
+}
+
+.contacts__title {
+  text-align: left;
+  color: var(--black);
+}
+.contacts-list {
+	list-style: none;
+	display: inline-block;
+}
+.contacts-list__item {
+  display: inline-block;
+  width: 50%;}
+
+.contacts-list__title {
+	display: block;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: var(--gray);
+}
+
+.contacts-list__desc, .contacts-list__link {
+	display: block;
+  text-align: left;
+  color: var(--black);
+  text-decoration: none;
+}
+

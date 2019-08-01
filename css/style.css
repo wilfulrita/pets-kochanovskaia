@@ -162,7 +162,7 @@ p {
 .hero__text {
 	display: block;
   width: 510px;
-  margin-left: 359px;
+  margin-left: 360px;
   margin-top: 115px;
 	vertical-align: center;
 }
@@ -198,30 +198,34 @@ p {
 .about {
 	width: 1024px;
 	margin: auto;
-	padding: 194px 132px 195px 41px;
 	background-color: var(--violet);
 	margin-bottom: 147px;
+  padding: 194px 41px;
 }
 
 .about:before {}
 .about:after {}
 
+
 .about__header {
 	display: block;
 	margin: auto;
+  margin-left: 320px;
+  margin-bottom: 75px;
 }
 
 .about__title {
   text-align: left;
   color: var(--white);
+  margin-bottom: 32px;
 }
 
 .about__header p {
-  width: 355px;
-  height: 44px;
+  width: 360px;
   text-align: left;
   color: var(--violet-gray);
 }
+
 
 .about__content {
 	display: block;
@@ -229,6 +233,8 @@ p {
 
 .about__img-wrap {
 	display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .about__img {
@@ -239,13 +245,23 @@ p {
 
 .about__text-wrap {
 	display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 20px 16px;
 }
 
-.about__features-list {}
+.about__features-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  margin-bottom: 60px;
+}
 
 .about__feature {
   text-align: left;
   color: var(--white);
+  margin-bottom: 8px;
 
 }
 
@@ -262,7 +278,15 @@ p {
   text-decoration: none;
 }
     
- .about__link-video:after {}
+ .about__link-video:after {
+      content: ""; 
+      background-image: url('img/arrow-next.svg');
+      background-color: #fff;
+      width: 20px;
+      height: 15px;
+      display: inline-block;
+      margin-left: 16px;
+ }
 
     /* --------------------------------БЛОК ПОРОДЫ ------------------------------------------ */
 
